@@ -245,7 +245,7 @@ DEPTH_PRESETS: dict[str, float | None] = {
     "San Barth \u2014 Bonny River (3.45 m LAT)": 3.45,
     "Awoba / Cawthorne Channel (3.30 m LAT)":    3.30,
     "Export Terminal / Bonny Channel (11.2 m)":  11.20,
-    "Westmore post-dredge (3.45 m)":             3.45
+    "Westmore post-dredge (3.45 m)":             3.45,
     "Chapel / JasmineS pre-dredge (3.45 m)":     3.45,
     "Chapel / JasmineS post-dredge (6.00 m)":    6.00,
 }
