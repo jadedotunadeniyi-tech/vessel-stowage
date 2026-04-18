@@ -791,12 +791,12 @@ with st.sidebar:
     # Fresh water + ballast + other stores — MT or Litres
     fw_unit = st.radio("Fresh water + ballast + other stores unit", ["MT", "Litres"], horizontal=True, key="fw_unit_radio")
     if fw_unit == "MT":
-        fw_mt = st.number_input("Fresh water + ballast + other stores on board (MT)", 0.0, 2000.0,
+        fw_mt = st.number_input("Fresh water + ballast + other stores (MT)", 0.0, 2000.0,
                                  round(default_fw_mt, 0), 10.0,
                                  help="Potable + distilled water. Density = 1.000 t/m\u00b3.")
     else:
         def_fw_L = mt_to_litres(default_fw_mt, FRESHWATER_DENSITY)
-        fw_L = st.number_input("Fresh water + ballast + other stores on board (Litres)", 0.0, 2_000_000.0,
+        fw_L = st.number_input("Fresh water + ballast + other stores (Litres)", 0.0, 2_000_000.0,
                                 round(def_fw_L, 0), 500.0,
                                 help="Fresh water + ballast + other stores: 1.000 t/m\u00b3 (1 litre = 1 kg exactly).")
         fw_mt = litres_to_mt(fw_L, FRESHWATER_DENSITY)
